@@ -81,10 +81,7 @@
     position: relative;
     z-index: 2;
 }
-.hero-heading {
-    font-size: 3rem;
-    font-weight: bold;
-}
+
 .hero-heading-blue {
     color: #00c6ff;
 }
@@ -124,7 +121,7 @@
 .hero-heading {
     font-family: 'Inter', sans-serif;
     letter-spacing: -4px;
-    font-size: 5em;
+    font-size: 4em;
     font-weight: 700;
     line-height: .8;
     padding-top: .5em;
