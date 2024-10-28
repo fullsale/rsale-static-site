@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1E3A8A; /* Dark blue background */
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.logo-text-styling {
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style:normal;
+    font-size: x-large !important;
+    color: white;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    height: 100vh;
+    color: rgb(64, 129, 220);
+    padding: 5rem 1rem;
+    background: url('img/creative-agency-bg.png') no-repeat center center/cover;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(30, 58, 138, 0.8); /* Overlay color */
+}
+
+.hero-content {
+    position: relative;
+    margin-top: 10rem;
+    z-index: 1;
+}
+
+.open-sans-hero-heading {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    font-size: 86px;
+    line-height: .8;
+    letter-spacing: -.2rem;
+    text-transform:capitalize;
+    color: white;
+}
+
+
+.hero-text {
+    margin-top: 2rem;
+    color: white;
+}
+
+.btn-outline-light {
+    border-color: white;
+}
+
+.btn-outline-light:hover {
+    background-color: white;
+    color: #1E3A8A !important;
+}
+
+.btn-outline-dark:hover {
+    background-color: rgb(2, 2, 2);
+    color: #f2f4f9 !important;
+}
+
+.nav-link, .navbar-brand, .btn {
+    color: white !important;
+}
+
+.btn-outline-light {
+    border-color: white;
+}
+
+.btn-outline-light:hover {
+    background-color: white;
+    color: #1E3A8A;
+}
+
+.bg-dark-blue {
+    background-color: rgba(30, 58, 138, 0.8);
+}
+
+.navbar-toggler-icon {
+    background-image: none;
+}
+
+.navbar-toggler .close-icon {
+    display: none;
+}
+
+.navbar-toggler.collapsed .navbar-toggler-icon {
+    display: block;
+}
+
+.navbar-toggler.collapsed .close-icon {
+    display: none;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+    display: none;
+}
+
+.navbar-toggler:not(.collapsed) .close-icon {
+    display: block;
+}
+
+.navbar.scrolled {
+    background-color: rgba(30, 58, 138, 0.8) !important;
+    transition: background-color 0.3s;
+}
+
+/** Section Styling **/
+
+.section-header-text-styling {
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style:normal;
+    font-size: 46px !important;
+    color: black;
+}
+
+/** Services Section **/
+
+.service-icon {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+}
+
+  .service-card {
+    text-align: left;
+    padding: 2rem;
+    border: 1px solid #e7e7e7;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+  .service-card:hover {
+    transform: translateY(-10px);
+  }
+  .apply-btn {
+    border: 1px solid #007bff;
+    color: #007bff;
+    background: none;
+  }
+
+  /** Button Styling **/
+
+  .btn-primary {
+    background-color: rgba(30, 58, 138, 0.8);
+  }
