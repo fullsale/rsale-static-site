@@ -49,3 +49,9 @@ function erasePhrase() {
 
 // Start the typewriter effect
 window.onload = typePhrase;
+
+ // JavaScript to dynamically generate the email address
+ document.getElementById("email-link").setAttribute(
+    "href",
+    "mailto:" + "admin" + "@" + "rsalecreative.com"
+  );
