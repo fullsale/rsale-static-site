@@ -158,3 +158,101 @@ body {
   .btn-primary {
     background-color: rgba(30, 58, 138, 0.8);
   }
+
+  /** Portfolio Styling **/
+
+  .portfolio-section h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+
+  .portfolio-section p {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: auto;
+  }
+
+  .transition-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .transition-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .btn-custom {
+    background-color: #2980b9;
+    color: #fff;
+    border: solid #2c3e50;
+    border-radius: 20px;
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .btn-custom:hover {
+    background-color: #3498db;
+    transform: scale(1.1);
+  }
+
+ /** Footer Styles **/
+
+  .footer-section {
+    position: relative;
+    background-color: #333;
+    color: #d1d1d1;
+  }
+
+  .footer-brand-text {
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style:normal;
+    font-size: 46px !important;
+    color: rgb(251, 248, 248);
+  }
+
+  .footer-description {
+    color: #b0b0b0;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .footer-header {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 1rem;
+  }
+
+  .footer-link {
+    color: #d1d1d1;
+    font-size: 0.95rem;
+    display: block;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .footer-link:hover {
+    color: #3498db;
+  }
+
+  .social-icons a {
+    color: #d1d1d1;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+  }
+
+  .social-icons a:hover {
+    color: #3498db;
+  }
+
+  .footer-bottom {
+    color: #b0b0b0;
+    font-size: 0.9rem;
+  }
