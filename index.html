@@ -3,342 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RSale Creative</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="stylesheet.css"> <!-- Link to your external stylesheet -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="We design websites that are fast, mobile-friendly, and built to rank. Get a site that’s as powerful as it is beautiful.">
+    <meta name="author" content="RSale Creative">
+    <meta name="keywords" content="fast Loading web design, professional web design, mobile-friendly websites">
+    <title>Affordable Small Business Web Design | R Sale Creative | Start with $0 Down</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" href="/fonts/maven-pro-v36-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
 </head>
-<body class="bg-dark">
+<body>
 
-    <nav class="shadow-sm navbar navbar-expand-lg navbar-dark sticky-top px-5" id="mainNavbar">
-        <div class="container-fluid justify-content-between">
-            <a class="navbar-brand logo-style pt-2" href="#">
-                <img src="img/logo-white.png" alt="Logo" id="navbarLogo" class="me-1 d-inline-block align-text-middle">
-            </a>
-    
-            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <!--Logo is turned white in the css with a filter on dark mode-->
+        <a href="" class="cs-logo" aria-label="back to home">
+            <img src="https://ik.imagekit.io/i94yyfabymd/rsc-black-logo_Wtg6sQnVR.svg?updatedAt=1756704353912" alt="logo" width="200" height="49" aria-hidden="true" decoding="async">
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
             </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+                 <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li">
+                        <p>
+                        New Site Incoming — Stay Tuned
+                        </p>
+                    </li> 
+                    </ul>
     
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ms-auto">
-                    <a class="nav-link active" aria-current="page" href="#hero-section">Home</a>
-                    <a class="nav-link" href="#services-section">Services</a>
-                    <a class="nav-link" href="#portfolio-section">Portfolio</a>
-                    <!-- <a class="nav-link" href="#blog-section">Blog</a> -->
-                    <a class="nav-link" href="#about-section">About</a>
-                    <a class="nav-link" href="#contact-section">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
-                        </svg> Contact
-                    </a>
-                </div>
-            </div>
+        <div class="cs-contact-group">
+            <a href="#cs-footer-275" class="cs-button-solid">Notify Me</a> 
         </div>
-    </nav>
-    
-    
-
-    <div id="hero-section" class="hero-section jumbotron text-center">
-        <div class="container">
-            <h1 class="hero-heading">Let's <span class="hero-heading-blue">Elevate</span> Your <span class="hero-heading-blue">Digital Presence</span></h1>
-            <p class="supporting-text">Get affordable, tailored Web Design, SEO, and Hosting Services powered by AI—click below to learn more!</p>
-            <a href="#services-section" class="btn btn-danger">Learn More</a>
-        </div>
+        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+        <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+            <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+            <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+        </button> -->
     </div>
+</header>
+                                
 
-
-<div id="services-section" class="bg-dark text-white mx-4 mb-0">
-
-    <div class="container-fluid m-0 mt-5 pt-5 text-center">
-        <h1 class="section-heading pt-5">My Services</h1>
-         <svg class="underline" width="300" height="30" viewBox="0 0 300 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 15 Q50 5, 100 15 T200 15 T300 15" stroke="lightblue" stroke-width="3" stroke-dasharray="300" stroke-dashoffset="300"></path>
-        </svg> 
-    </div>
-    <p class="lead-section-text">Get the best in digital services without overspending. Starting at just $20/month, our offerings combine exceptional quality with affordable pricing. You won't find this level of service for such a great value anywhere else. Perfect for businesses looking to elevate their online presence without breaking the bank.</p>
-
-    <div class="row g-4 mt-4">
-        <div class="col-md-4">
-            <div class="service-card">
-                <div class="service-icon-1">
-                    <img src="img/SEO-cheatsheet.jpeg" class="card-img-top" alt="SEO Services Image">
-                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
-                        <path d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"/>
-                    </svg> -->
-                </div>
-                <h3>SEO Services</h3>
-                <p>Elevate your online presence with our SEO services that promise not just higher rankings but a sustained influx of organic traffic that converts.</p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="service-card">
-                <div class="service-icon-2">
-                    <img src="img/web-design-services.png" class="card-img-top" alt="Web Design Services Image">
-                   <!-- <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-laptop" viewBox="0 0 16 16">
-                        <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5"/>
-                    </svg> -->
-                </div>
-                <h3>Web Design</h3>
-                <p>We craft visually appealing, intuitive websites designed to captivate your visitors, delivering the top conversion rates essential for outshining your competition.</p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="service-card">
-                <div class="service-icon-3">
-                    <img src="img/content_creation_services_image.png" class="card-img-top" alt="Content Creation Services Image">
-                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z" />
-                    </svg> -->
-                </div>
-                <h3>Content Creation</h3>
-                <p>With our content creation expertise in AI-generated imagery/text, precise website pages, and compelling PR content, order as desired.</p>
-            </div>
-        </div>
-    </div>
-    <!--<div class="extra-spacing-bottom text-center mt-5">
-        <button class="btn btn-custom">Visit Portfolio</button>
-    </div> -->
-    
-
-
-<section>
-    <div id="portfolio-section" class="container-fluid bg-dark text-light mt-0 px-5">
-        <div class="text-center">
-            <div class="container-fluid m-0 text-center">
-                <h1 class="section-heading mt-5 pt-5">Portfolio</h1>
-                <svg class="underline" width="300" height="30" viewBox="0 0 300 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 15 Q50 5, 100 15 T200 15 T300 15" stroke="lightgreen" stroke-width="3" stroke-dasharray="300" stroke-dashoffset="300"></path>
-                </svg>
-            </div>
-            <p class="lead">Check out my latest projects!</p>
-        </div>
-
-        <div class="d-grid gap-2 col-2 mx-auto">
-    <!-- Button trigger modal -->
-        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#alertModal">
-   About the projects</button>
-        </div>
-
-    <!-- Modal -->
-        <div class="modal fade" id="alertModal" tabindex="-1" aria-labelledby="alertModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-               <!-- <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div> -->
-            <div class="modal-body alert alert-success border-success rounded-3 shadow-sm p-4 my-0">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-exclamation-triangle-fill me-2 fs-4 text-success"></i>
-                  <h5 class="alert-heading mb-0">Portfolio Notice</h5>
-                </div>
-                <p class="mt-3 mb-0">
-                  The projects showcased in my portfolio are designed solely to demonstrate my experience and capabilities in web development. They are sample projects and not commissioned by real clients.
-                </p>
-                <hr>
-                <p class="mb-0">
-                    If you'd like to learn more about our services, feel free to <a href="#" class="alert-link" id="email-link">reach out</a>—we’re here to help bring your ideas to life. 
-                    .
-                  </p>
-                  <p class="text-center mt-2"><button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Close</button></p>
-            </div>
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+<section id="hero-1351">
+    <svg class="cs-wave" width="1920" height="179" viewBox="0 0 1920 179" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1920 179V91.3463C1835.33 91.3463 1715.47 76.615 1549.2 32.9521C1299.48 -32.3214 1132.77 12.1006 947.32 61.5167C810.762 97.9044 664.042 137 466.533 137C331.607 137 256.468 123.447 188.082 111.113C130.974 100.812 78.5746 91.3609 0 91.3609V179H1920Z" fill="#111724"/>
+    </svg>
+    <div class="cs-container">
+      <div class="cs-content">
+         <span class="cs-topper">The calm before the next launch</span> 
+        <h1 class="cs-title">Something New is Coming</h1>
+        <p class="cs-text">
+            We’re refining our craft and not taking on new projects at the moment. Sign up to be the first to know when we’re back.
+        </p>
+        <a href="#cs-footer-275" class="cs-button-outline">Sign Up</a>
       </div>
     </div>
-  </div>
-        <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-            Launch static backdrop modal
-          </button>
-        <div class="modal-dialog modal-dialog-centered">  
-            <p class="mt-3 mb-0">
-                The projects showcased in our portfolio are designed solely to demonstrate our experience and capabilities in web development. They are sample projects and not commissioned by real clients.
-              </p> -->
-            <!--<div class="alert alert-success border-success rounded-3 shadow-sm p-4 my-4" style="background-color: #e9f7ef;">
-            <div class="d-flex align-items-center">
-              <i class="bi bi-exclamation-triangle-fill me-2 fs-4 text-success"></i>
-              <h5 class="alert-heading mb-0">Portfolio Notice</h5>
-            </div>
-            <p class="mt-3 mb-0">
-              The projects showcased in our portfolio are designed solely to demonstrate our experience and capabilities in web development. They are sample projects and not commissioned by real clients.
+    <!-- Existing Bubble Groups -->
+    <div class="cs-bubbles cs-bubbles1" aria-hidden="true"></div>
+    <div class="cs-bubbles cs-bubbles2" aria-hidden="true"></div>
+    <!-- Additional Small Bubbles -->
+    <div class="cs-bubbles cs-bubbles3" aria-hidden="true">
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+    </div>
+  </section>
+
+<!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<footer id="cs-footer-275">
+    <div class="cs-container">
+        <!-- Logo Group -->
+        <div class="cs-logo-group">
+            <a aria-label="go back to home" class="cs-logo" href="">
+                <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="https://ik.imagekit.io/i94yyfabymd/RSC_white_logo_1CMP-_TaV.png?updatedAt=1756752183232" alt="logo" width="240" height="32">
+            </a>
+            <p class="cs-text">
+                Our mission is simple: help your business thrive online through strategic design, dependable support, and targeted digital solutions—so you can focus on what you do best.
             </p>
-            <hr>
-            <p class="mb-0">
-                If you'd like to learn more about our services, feel free to <a href="#" class="alert-link" id="email-link">reach out</a>—we’re here to help bring your ideas to life. 
-                .
-              </p>-->
         </div>
-          
-          
-        <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
-            <div class="col">
-                <div class="card h-100 bg-dark text-light mx-4">
-                    <a href="https://rsalecreative.com/fire_media/" target="blank"><img src="img/fire-creative.png" class="card-img-top" alt="Fire Media"></a>
-                    <div class="card-body">
-                        <h5 class="card-title"><a class="link-success link-offset-2 link-underline-opacity-0 link-underline-opacity-25-hover" href="https://rsalecreative.com/fire_media/" target="blank">Fire Media</a></h5>
-                        <p class="card-text"></p>
-                    </div>
-                </div>
+
+        <form class="cs-form" id="cs-form-2251" name="Contact Form" method="post" data-netlify="true">
+            <label class="cs-label">
+                <input class="cs-input" required type="text" id="name-2251" name="name" placeholder="Name">
+            </label>
+            <label class="cs-label">
+                <input class="cs-input" required type="email" id="email-2251" name="email" placeholder="Email">
+            </label>
+            <label class="cs-label cs-message">
+                <textarea class="cs-input cs-textarea" required name="Message" id="message-2251" placeholder="Message"></textarea>
+            </label>
+            <div class="cs-button-wrapper">
+                <button class="cs-button-solid cs-submit" type="submit">Send</button>
             </div>
-            <div class="col">
-                <div class="card h-100 bg-dark text-light mx-4">
-                    <a href="https://rsalecreative.com/temPlate/" target="blank"><img src="img/temPlate.png" class="card-img-top" alt="TemPlate"></a>
-                    <div class="card-body">
-                        <h5 class="card-title link-success"><a class="link-success link-offset-2 link-underline-opacity-0 link-underline-opacity-25-hover" href="https://rsalecreative.com/temPlate/" target="blank">temPlate Multi-use</a></h5>
-                        <p class="card-text"></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 bg-dark text-light mx-4">
-                    <a href="https://rsalecreative.com/creativeAgency/" target="blank"><img src="img/creative-agency.png" class="card-img-top" alt="Creative Agency"></a>
-                    <div class="card-body">
-                        <h5 class="card-title link-success"><a class="link-success link-offset-2 link-underline-opacity-0 link-underline-opacity-25-hover" href="https://rsalecreative.com/creativeAgency/" target="blank">Creative Agency</a></h5>
-                        <p class="card-text"></p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </form>
     </div>
-</section>
-
-
-<!-- <div id="blog-section" class="container-fluid bg-dark text-light mt-0">
-    <div class="container-fluid m-0 text-center">
-        <h1 class="section-heading mt-5 pt-5 px-5">Our Blog</h1>
-        <svg class="underline" width="300" height="30" viewBox="0 0 300 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 15 Q50 5, 100 15 T200 15 T300 15" stroke="hotpink" stroke-width="3" stroke-dasharray="300" stroke-dashoffset="300"></path>
-        </svg>
-    </div>
-    <div class="row mt-5"> -->
-
-        <!-- First row of Blog -->
-        <!-- <div class="col-md-4">
-            <div class="card h-100 mx-4 bg-dark text-light shadow">
-                <img src="img/SEO-cheatsheet.jpeg" class="card-img-top" alt="Blog Image">
-                <div class="card-body">
-                    <h5 class="card-title">SEO Cheatsheet: Essential Tips and Strategies</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae eros nec nulla varius venenatis. Nulla facilisi.</p>
-                </div>
-                <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card h-100 mx-4 bg-dark text-light shadow">
-                <img src="img/Midjourney_prompts_feature_image.jpg" class="card-img-top" alt="Blog Image">
-                <div class="card-body">
-                    <h5 class="card-title">8 Creative Midjourney V6 Examples| Boost Your Digital Marketing</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae eros nec nulla varius venenatis. Nulla facilisi.</p>
-                </div>
-                <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card h-100 mx-4 bg-dark text-light shadow">
-                <img src="img/Build-Your_Own_Website_With _Divi.jpg" class="card-img-top" alt="Blog Image">
-                <div class="card-body">
-                    <h5 class="card-title">Transform Your Ideas into Reality: Building Your Own Website with Divi Theme Builder in 5 Easy Steps</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae eros nec nulla varius venenatis. Nulla facilisi.</p>
-                </div>
-                <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                </div>
-            </div>
-        </div>
-        
-        <div class="extra-spacing-bottom text-center mt-5">
-            <button class="btn btn-custom">Visit Blog</button>
-        </div> -->
-
-        <section>
-            <div id="about-section" class="container-fluid bg-dark text-light mt-0 px-5 py-5">
-                <div class="text-center">
-                    <div class="container-fluid m-0">
-                        <h1 class="section-heading mt-5 pt-5">About</h1>
-                        <svg class="underline" width="300" height="30" viewBox="0 0 300 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 15 Q50 5, 100 15 T200 15 T300 15" stroke="lightgreen" stroke-width="3" stroke-dasharray="300" stroke-dashoffset="300"></path>
-                        </svg>
-                    </div>
-                </div>
-
-                    <div class="card bg-dark text-light align-text-left mb-3 mt-5">
-                        <div class="row g-0">
-                          <div class="col-md-4">
-                            <img src="img/bio-img.png" class="img-fluid rounded-start" alt="...">
-                          </div>
-                          <div class="col-md-8 align-text-left">
-                            <div class="card-body">
-                              <h5 class="card-title">Thanks for stopping by!</h5>
-                              <p class="card-text">As a passionate creative, I specialize in building fast, efficient, and long-lasting websites with the help of cutting-edge AI technology. My mission is to deliver exceptional digital experiences that stand the test of time. In addition to creating high-quality websites, I offer hosting for static sites at nearly no cost, ensuring your site remains accessible and efficient. I also provide seamless transitions for clients moving from platforms like Wix and Squarespace, making the switch effortless and beneficial. Let’s create something amazing together!</p>
-                              <a href="#" class="btn btn-info">Contact Me</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div> 
-                </div>
-            </div>
-        </section>
-
-<!-- Footer -->
-<footer class="footer-main w-100">
-    <div class="container">
-        <div class="row text-center text-md-start">
-            <div class="col-md-3 mb-4">
-                <h5 class="footer-title">MISSION</h5>
-                <p>With a decade of experience, I specialize in crafting tailored campaigns that resonate. My dedication to excellence ensures brands shine online, achieving remarkable ROI. Where creativity meets strategy. <a href="#" class="text-decoration-underline color-salmon">Learn More</a></p>
-            </div>
-            <div class="col-md-3 mb-4">
-                <h5 class="footer-title">SERVICES</h5>
-                <div class="footer-links">
-                    <p><a href="#">Website Design</a></p>
-                    <p><a href="#">SEO</a></p>
-                    <p><a href="#">WordPress Web Design</a></p>
-                    <p><a href="#">Social Media Management</a></p>
-                    <p><a href="#">Marketing Services</a></p>
-                    <p><a href="#">Content Creation</a></p>
-                </div>
-            </div>
-            <div class="col-md-3 mb-4">
-                <h5 class="footer-title">QUICK LINKS</h5>
-                <div class="footer-links">
-                    <p><a href="#">Home</a></p>
-                    <p><a href="#">Services</a></p>
-                    <p><a href="#">Privacy</a></p>
-                    <p><a href="#">Terms</a></p>
-                </div>
-            </div>
-            <div class="col-md-3 mb-4" id="contact-section">
-                <h5 class="footer-title">STAY CONNECTED</h5>
-                <p><a class="color-salmon" href="https://m.me/113695475105405">Facebook Messenger</a></p>
-                <p>admin@rsalecreative.com</p>
-                <p>11700 Mukilteo Speedway Ste 201<br>Mukilteo, WA 98275</p>
-                <div>
-                    <a href="https://www.facebook.com/profile.php?id=100093796345799"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="salmon" class="bi bi-facebook" viewBox="0 0 16 16">
-                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
-                      </svg></a>
-                    <a href="https://www.instagram.com/rsale_creative/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="salmon" class="bi bi-instagram" viewBox="0 0 16 16">
-                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-                      </svg></a>
-                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="salmon" class="bi bi-rss-fill" viewBox="0 0 16 16">
-                        <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm1.5 2.5c5.523 0 10 4.477 10 10a1 1 0 1 1-2 0 8 8 0 0 0-8-8 1 1 0 0 1 0-2m0 4a6 6 0 0 1 6 6 1 1 0 1 1-2 0 4 4 0 0 0-4-4 1 1 0 0 1 0-2m.5 7a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"/>
-                      </svg></a>
-                    <a href="https://www.quora.com/profile/Robert-Sale-14"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="salmon" class="bi bi-quora" viewBox="0 0 16 16">
-                        <path d="M8.73 12.476c-.554-1.091-1.204-2.193-2.473-2.193-.242 0-.484.04-.707.142l-.43-.863c.525-.45 1.373-.808 2.464-.808 1.697 0 2.568.818 3.26 1.86.41-.89.605-2.093.605-3.584 0-3.724-1.165-5.636-3.885-5.636-2.68 0-3.839 1.912-3.839 5.636 0 3.704 1.159 5.596 3.84 5.596.425 0 .811-.046 1.166-.15Zm.665 1.3a7 7 0 0 1-1.83.244C3.994 14.02.5 11.172.5 7.03.5 2.849 3.995 0 7.564 0c3.63 0 7.09 2.828 7.09 7.03 0 2.337-1.09 4.236-2.675 5.464.512.767 1.04 1.277 1.773 1.277.802 0 1.125-.62 1.179-1.105h1.043c.061.647-.262 3.334-3.178 3.334-1.767 0-2.7-1.024-3.4-2.224Z"/>
-                      </svg></a>
-                </div>
-            </div>
-        </div>
-    </div>
+</div> 
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<script
-  src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-<script src="scripts/main.js"></script>
+                                
+                                
+
+    <script src="scripts/script.js"></script>
 </body>
 </html>
